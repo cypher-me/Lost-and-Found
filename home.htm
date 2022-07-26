@@ -9,6 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>LOST 'n FOUND</title>
+    <style>
+        a:link{
+        color:rgb(228, 228, 228) ;
+    }
+        a:hover{
+    color: blue;
+
+    }
+        a:active{
+    color: orangered;
+    }
+    </style>
     </head>
 <body>
     <nav>
@@ -17,11 +29,15 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Home </a>
+                <a href="#" style="color: yellowgreen;">Home </a>
             </li>
-            <li>
-                <a href="#">Lost/Found</a>
+            <div>
+            <li style="color: white;">
+                <a href="lostpage.htm">Lost</a> 
+                /
+                <a href="#">Found</a>
             </li>
+            </div>
             <li>
                 <a href="#">Messages</a>
             </li>
@@ -39,7 +55,7 @@
     <div>
     <svg  class="svg"
     id="logo"
-        width="900" height="400" viewBox="0 0 435 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+        width="100vw" height="50vh" viewBox="0 0 435 177" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M55.2 73.144C25.504 76.92 10.656 78.808 10.656 78.808C10.592 78.872 9.21601 66.872 6.52801 42.808C3.71201 18.488 2.24001 5.976 2.11201 5.272L24.288 2.392C24.224 2.584 26.112 19.256 29.952 52.408C43.328 50.68 50.016 49.816 50.016 49.816L55.2 73.144Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_2_3)"/>
         <path d="M97.5953 2.776C109.051 2.776 118.171 5.944 124.955 12.28C132.059 18.936 135.611 28.024 135.611 39.544C135.611 48.952 132.443 57.4 126.107 64.888C118.235 74.36 107.067 79.096 92.6033 79.096C81.2113 79.096 72.0593 75.64 65.1473 68.728C58.4273 62.136 55.0673 53.688 55.0673 43.384C55.0673 32.568 58.7793 23.288 66.2033 15.544C74.2033 7.032 84.6673 2.776 97.5953 2.776ZM95.8673 52.504C98.6833 52.504 101.307 51.608 103.739 49.816C107.067 47.384 108.763 43.768 108.827 38.968C108.827 34.744 107.355 31.576 104.411 29.464C102.171 27.8 99.6433 26.968 96.8273 26.968C93.8193 26.968 91.0353 27.992 88.4753 30.04C85.3393 32.6 83.7713 36.056 83.7713 40.408C83.7713 44.248 85.3073 47.352 88.3793 49.72C90.8753 51.576 93.3713 52.504 95.8673 52.504Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_2_3)"/>
         <path d="M143.009 54.808C144.737 55.32 146.465 55.832 148.193 56.344C151.393 57.24 154.305 57.688 156.929 57.688C158.081 57.688 159.201 57.592 160.289 57.4C164.449 56.76 167.457 54.36 169.313 50.2C170.529 47.512 171.553 42.968 172.385 36.568C172.769 32.6 173.185 28.632 173.633 24.664C174.337 19.416 175.649 15.192 177.569 11.992C180.129 7.832 183.873 4.984 188.801 3.448C191.041 2.744 193.217 2.392 195.329 2.392C200.193 2.392 205.249 4.76 210.497 9.496L205.505 28.504C205.761 28.44 205.281 27.992 204.065 27.16C202.913 26.264 201.761 25.816 200.609 25.816C199.649 25.816 198.753 26.168 197.921 26.872C195.617 28.856 193.889 34.584 192.737 44.056C191.457 55.384 190.177 62.552 188.897 65.56C187.617 68.568 185.153 71.32 181.505 73.816C177.025 76.952 171.937 78.616 166.241 78.808C159.841 79 154.529 79 150.305 78.808C147.041 78.68 145.441 78.52 145.505 78.328L143.009 54.808Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_2_3)"/>
@@ -52,9 +68,13 @@
         <path d="M224.092 163.96C224.284 164.088 228.028 142.36 235.324 98.776C238.076 101.592 245.244 107.8 256.828 117.4C267.9 126.552 273.788 131.576 274.492 132.472C275.708 124.088 276.988 115.48 278.332 106.648L302.14 111.736C301.756 113.4 298.108 134.52 291.196 175.096C289.404 173.624 286.908 171.672 283.708 169.24C275.964 163.48 265.148 155.928 251.26 146.584C250.108 152.472 248.796 159.352 247.324 167.224L224.092 163.96Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_2_3)"/>
         <path d="M314.988 98.392C331.692 99.736 343.596 101.144 350.7 102.616C364.204 105.496 373.74 110.328 379.308 117.112C383.148 121.784 384.812 126.968 384.3 132.664C383.212 146.744 375.468 157.592 361.068 165.208C348.908 171.544 334.444 174.712 317.676 174.712C314.796 174.712 311.98 174.616 309.228 174.424C311.148 149.144 313.068 123.8 314.988 98.392ZM334.476 147.256C339.084 147.704 343.116 146.808 346.572 144.568C350.348 142.072 352.236 138.584 352.236 134.104C352.236 127.704 346.956 124.024 336.396 123.064L334.476 147.256Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_2_3)"/>
         </svg>
-        </div>
-        <h2 style="color: red;">About</h2>
 
+        </div>
+        <div class="aboutus">
+        <h2>ABOUT US</h2>
+        <p>Welcome to the <strong>LOST 'N FOUND</strong> website. Here you will be able to site items that that you found or even serach for an item(s) that you may have lost. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt, reiciendis totam eius nihil eos vero expedita. Assumenda nisi voluptas ullam aut consequatur optio sed, cupiditate iusto? Vero asperiores numquam repellendus consectetur quisquam quam quos quas, excepturi eos! Ea, natus dignissimos similique amet dolorem, voluptate earum libero ad itaque, vero maiores fugiat nemo ipsa et quae quisquam. Minima sit debitis dolores quibusdam ut velit. Architecto, commodi? Vitae officiis velit ex iste nisi, ratione dolores maiores consectetur vero, ipsa repellat repudiandae facere similique odio fugiat? Facere minima distinctio repellat perferendis vel placeat tempora numquam provident, non fugiat, ducimus, asperiores eligendi! Placeat animi voluptatum ipsum facere vero ullam corrupti quo voluptatibus necessitatibus molestiae temporibus, debitis ab obcaecati repellat amet odit quia, eveniet odio minima ipsa assumenda ut. Vitae illum rerum amet laudantium ut, ex adipisci veritatis excepturi reiciendis enim autem cupiditate modi assumenda veniam omnis! Beatae omnis, fugit et voluptas recusandae delectus laboriosam assumenda necessitatibus ratione ipsum? Reiciendis ad nulla cum quo enim quas vel voluptates impedit unde odio nihil pariatur id, dolores aliquam, sunt maxime quam earum, provident dignissimos est error omnis debitis. Necessitatibus odit perferendis incidunt vel ut, officiis expedita odio esse corrupti blanditiis laboriosam quisquam praesentium, eius aperiam, hic consequatur at. Perspiciatis, laudantium. Incidunt, reprehenderit voluptates sequi dicta at magnam inventore tempora reiciendis iusto, natus ab eligendi corrupti assumenda praesentium similique quas quae consequuntur quis veniam ipsa ipsam laboriosam facilis. Ipsa hic nihil eaque sit eum. Natus officiis adipisci ratione corporis ducimus quidem consectetur temporibus libero, saepe debitis. Cum sint, nihil placeat labore minima dolor at explicabo ex odit quam esse veniam voluptatem cupiditate sunt ea illum officia neque quo! Optio exercitationem minus excepturi tempora nam ab iure consectetur dolorum, magnam reprehenderit vitae sequi soluta odit beatae, eius hic corrupti, ex commodi? Veniam suscipit, ipsam quam laudantium magni incidunt sunt atque voluptate ea sapiente non magnam repellendus esse ex ducimus dolore earum, expedita quae cumque enim consequatur. Veniam nulla veritatis voluptatum architecto voluptatibus officia deserunt. Sed molestias perferendis eaque quasi nisi, aliquam numquam distinctio excepturi, repudiandae deleniti doloremque porro, soluta enim! Earum iure harum dicta quis at iusto nam saepe velit sed natus, quidem vitae perferendis impedit, maxime tempora atque quibusdam voluptatem! Sint natus harum debitis in dicta quae nemo suscipit, aperiam eius commodi accusantium. Tempora quas explicabo quis quidem minus sunt. Eveniet aperiam nesciunt necessitatibus! Hic deserunt dolorem ab voluptatum tempore, porro quod esse veniam excepturi modi facere, voluptas enim libero quaerat nobis corrupti distinctio sapiente tenetur dolor minus rerum temporibus! Delectus sequi animi reiciendis saepe? Exercitationem ut, laboriosam ad doloribus tenetur magni quas deleniti alias illum illo possimus quibusdam architecto enim reiciendis non nostrum. Vero fugiat perspiciatis dolores! Quo, quaerat provident. Quisquam esse ullam, et unde recusandae numquam minus laboriosam odit tempore consequuntur dolor illo! Quod, pariatur quaerat molestias ullam sunt id et perferendis esse ut adipisci vel veritatis in sit dicta mollitia at quae voluptatibus dolore qui recusandae non, error nihil rem! Error et blanditiis quae provident hic repudiandae, nihil molestiae earum porro eius ducimus ad maxime natus minima? Non aut accusantium incidunt delectus velit culpa, pariatur natus earum ea eos excepturi corrupti magni harum quasi beatae, modi deleniti autem vitae ullam at minus iste alias cum? Nulla voluptates ullam repudiandae vel voluptatibus alias praesentium magnam expedita accusamus voluptatum accusantium, error consequatur beatae corrupti vero illum repellat nobis sit amet animi vitae sapiente nam omnis laboriosam! Error aliquam veniam alias cumque ratione reprehenderit velit modi odio harum repellat minima, ad magnam rerum nulla laboriosam omnis quisquam repellendus ipsum in facilis similique hic dolorum. Earum illum voluptas doloremque consequuntur unde quia commodi deserunt culpa sequi ad molestias quis doloribus corporis dolor a recusandae nisi, magni alias esse eum id hic? Amet placeat voluptatem facilis nihil ipsa deleniti minima dolores pariatur illo obcaecati ex modi vel suscipit, laborum dignissimos vero impedit esse, cupiditate expedita corrupti ipsum ea? Nihil tempora placeat doloremque cum quas libero sit totam tenetur quibusdam nulla. Quaerat saepe cupiditate officia magni! Perferendis minima voluptate exercitationem quia quidem temporibus architecto nam error tenetur reprehenderit accusamus, qui, itaque neque officia quam aperiam libero cumque? Suscipit assumenda deserunt enim qui, porro eum, nulla sed dicta quos quasi voluptates iste voluptatum veritatis corrupti, possimus libero mollitia iure consequatur adipisci dolores tenetur. Temporibus esse quo ad non voluptatibus architecto dignissimos, voluptate sequi assumenda! Tempore maiores quam numquam error dolore incidunt perspiciatis neque delectus aut sit magni ex excepturi explicabo aspernatur veritatis, voluptates odio, expedita modi atque. Totam atque, labore iste impedit quae alias provident necessitatibus earum corrupti, id ex exercitationem odio, laborum cupiditate hic sed ipsa ipsum officiis ea dolorum itaque minus ab veritatis quod? Asperiores quas eligendi neque velit repudiandae ea dolor cumque molestiae ad natus, ipsa eos commodi non iusto voluptatum officia sit ullam ipsum aliquid, voluptates odio quam impedit magni. Commodi ut velit eaque placeat. Molestias eveniet molestiae eos sit ex rerum dicta ipsa vel optio, expedita eius est quia voluptatum libero saepe tempore quos quisquam omnis commodi illum harum assumenda quasi perspiciatis. Incidunt reiciendis, culpa aperiam quo delectus molestias iusto, dolore reprehenderit illo unde non ab fuga ex eius sunt earum enim qui. Qui veniam, quod eius quasi sunt modi quam sit deserunt obcaecati magni eligendi cumque commodi ipsam consequatur perspiciatis iusto officiis odio? Maiores ducimus adipisci corporis est corrupti quas vel soluta, non veniam magnam mollitia aperiam amet, minus accusamus enim praesentium quis explicabo sequi aspernatur nisi nemo. In, nostrum dolorem quam inventore fugit excepturi consectetur similique impedit cumque ex, rem aperiam. Quod adipisci cum, commodi alias animi saepe, enim temporibus optio, odit praesentium officia nostrum fugiat fuga exercitationem molestiae vitae voluptatum culpa accusamus minus? Voluptate incidunt nesciunt, eos at officiis quibusdam assumenda quas facere ex deserunt qui blanditiis rem molestiae minus, nisi nihil commodi rerum accusantium esse doloribus vel in. Quos iure delectus tenetur, officia vitae rerum aperiam voluptas molestiae doloribus in mollitia! Nulla amet earum quidem numquam fugit, architecto animi et inventore temporibus optio est delectus eveniet suscipit consectetur atque assumenda molestiae! Explicabo inventore sapiente incidunt sint cupiditate optio sunt! Ullam, labore soluta!</p>
+        </div>
+        
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,31 +1,34 @@
-const navSlide= () =>{
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links ');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    
-    burger.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active');
+const express = require('express')
+const app = express()
+// const logger  = require('logger')
+// var logger = logger.Logger
+const port = 3000
+app.set('view engine', 'html');
 
+app.use(express.static(__dirname + '/public'))
+// app.use(logger('dev'));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(express.static(path.join(__dirname, 'Public')));
 
-    //Animate Links
-    navLinks.forEach(link, index=>{
-        if(link.style.animation){
-            link.style.animation = ''
-        }else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
-        }
-        
-    });
+// app.get('/', (req, res) => res.send('Welcome To Code Handbook!'))
 
-    //Burger Animation
-    burger.classList.toggle('toggle');
-     });
+/*
+* Route to render HTML Page
+*/
 
-}
+// homePage
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/home.htm');
+});
+app.get('/home.htm', function (req, res) {
+    res.sendFile(__dirname + '/home.htm');
+});
 
-navSlide();
+// lostPage
+app.get('/lostpage.htm', function (req, res) {
+    res.sendFile(__dirname + '/lostpage.htm');
+});
 
-const logo = document.querySelectorAll('#logo path');
-for(let i = 0; i<logo.length; i++){
-    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
-}
+// websitePort
+app.listen(port, () => console.log(`App listening on port ${port}!`))
